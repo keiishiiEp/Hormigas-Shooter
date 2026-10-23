@@ -14,7 +14,7 @@ reloj = pygame.time.Clock()
 
 # Carga segura del fondo
 try:
-    fondo_original = pygame.image.load("assets/fondo1.jpg").convert()
+    fondo_original = pygame.image.load("assets/fondo3.png").convert()
     imagen_fondo = pygame.transform.scale(fondo_original, (ANCHO_PANTALLA, ALTO_PANTALLA))
 except (pygame.error, FileNotFoundError):
     imagen_fondo = None
@@ -25,8 +25,8 @@ fuente_grande = pygame.font.SysFont("Arial", 48)
 hormiga = Jugador(
     x=ANCHO_PANTALLA // 2 - 25,
     y=ALTO_PANTALLA // 2 - 25,
-    ancho=50,
-    alto=50,
+    ancho=60,
+    alto=60,
     velocidad=5,
     ancho_pantalla=ANCHO_PANTALLA,
     alto_pantalla=ALTO_PANTALLA
