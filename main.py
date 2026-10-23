@@ -12,7 +12,6 @@ pygame.display.set_caption("Defensa del Hormiguero - EID")
 
 reloj = pygame.time.Clock()
 
-# Carga segura del fondo
 try:
     fondo_original = pygame.image.load("assets/fondo3.png").convert()
     imagen_fondo = pygame.transform.scale(fondo_original, (ANCHO_PANTALLA, ALTO_PANTALLA))
