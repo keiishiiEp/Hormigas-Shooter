@@ -25,7 +25,6 @@ class GestorEnemigos:
         elif fase == 3:
             self.enemigos.append(Enemigo("pulgon", 150, self.ancho_pantalla, lado="izquierda"))
             self.enemigos.append(Enemigo("escarabajo", 260, self.ancho_pantalla, lado="derecha"))
-            # Ahora la araña desciende desde el techo hasta la altura 380:
             self.enemigos.append(Enemigo("arana", 250, self.ancho_pantalla, lado="superior"))
         
         elif fase == 4:
