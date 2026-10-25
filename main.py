@@ -52,8 +52,6 @@ while ejecutando:
             ejecutando = False
         
         if evento.type == pygame.KEYDOWN:
-            if evento.key == pygame.K_h:
-                hormiga.recibir_daño(15)
             if evento.key == pygame.K_j:
                 gestor_proyectiles.disparar_parabolico(hormiga.rect.centerx, hormiga.rect.top, direccion=1)
             if evento.key == pygame.K_l:
