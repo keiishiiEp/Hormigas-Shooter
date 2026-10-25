@@ -9,7 +9,7 @@ ANCHO_PANTALLA = 800
 ALTO_PANTALLA = 600
 pantalla = pygame.display.set_mode((ANCHO_PANTALLA, ALTO_PANTALLA))
 pygame.display.set_caption("Defensa del Hormiguero - EID")
-
+#enlace_Video_Defensa = https://drive.google.com/file/d/1jH4F7OHDF8lfAdTwsHIDOO1hq9rzIQMx/view?usp=sharing
 reloj = pygame.time.Clock()
 
 try:
@@ -113,7 +113,7 @@ while ejecutando:
     gestor_proyectiles.dibujar(pantalla)
     gestor_enemigos.dibujar(pantalla)
 
-    texto_fase = fuente.render(f"Fase: {fase_actual} / 4", True, (50, 50, 50))
+    texto_fase = fuente.render(f"Fase: {fase_actual} / 4", True, (220, 220, 220))
     pantalla.blit(texto_fase, (20, 20))
 
     texto_vida = fuente.render(f"HP: {max(0, hormiga.vida)}", True, (150, 0, 0))
